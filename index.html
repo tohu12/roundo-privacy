@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy — Roundo</title>
+  <meta name="description" content="Privacy policy for Roundo, a free interval workout timer for Android and Wear OS. No data collected, no tracking, no ads.">
+  <style>
+    :root {
+      --bg: #0B0D10; --bg2: #14171D; --card: #12151B;
+      --fg: #E8EAEC; --fg2: #9AA0A6; --fg3: #6B7178;
+      --lime: #C7F84B; --line: #23272E;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      background: radial-gradient(120% 90% at 50% 0%, var(--bg2), var(--bg));
+      color: var(--fg);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+      min-height: 100vh;
+    }
+    .wrap { max-width: 720px; margin: 0 auto; padding: 56px 24px 80px; }
+    .brand { display: flex; align-items: center; gap: 14px; margin-bottom: 40px; }
+    .brand svg { width: 40px; height: 40px; }
+    .brand span { font-size: 26px; font-weight: 700; letter-spacing: -0.5px; }
+    h1 { font-size: 32px; font-weight: 700; letter-spacing: -0.8px; margin: 0 0 6px; }
+    .updated { color: var(--fg3); font-size: 14px; margin-bottom: 32px; }
+    h2 { font-size: 20px; font-weight: 600; margin: 36px 0 12px; color: var(--fg); }
+    p, li { color: var(--fg2); font-size: 16px; }
+    a { color: var(--lime); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    strong { color: var(--fg); }
+    .lead {
+      background: var(--card); border: 1px solid var(--line); border-radius: 16px;
+      padding: 20px 22px; margin: 28px 0; font-size: 16px;
+    }
+    .lead strong { color: var(--lime); }
+    ul { padding-left: 22px; }
+    li { margin: 8px 0; }
+    hr { border: none; border-top: 1px solid var(--line); margin: 48px 0 24px; }
+    footer { color: var(--fg3); font-size: 14px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="brand">
+      <svg viewBox="0 0 108 108" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M 54 26 A 28 28 0 1 1 26 54" stroke="#C7F84B" stroke-width="10" stroke-linecap="round" fill="none"/>
+      </svg>
+      <span>roundo</span>
+    </div>
+
+    <h1>Privacy Policy</h1>
+    <div class="updated">Last updated: 6 May 2026</div>
+
+    <p>Roundo (“the app”) is a free, ad-free interval and CrossFit-style workout timer
+      for Android and Wear OS, published by Tomáš Hulek.</p>
+
+    <div class="lead">
+      This policy explains what data the app handles. The short version:
+      <strong>the app collects nothing, sends nothing, and contains no third-party
+      tracking, no analytics, and no advertising SDKs.</strong>
+    </div>
+
+    <h2>Data we collect</h2>
+    <p><strong>None.</strong> Roundo does not collect, transmit, or share any personal
+      or non-personal data with the developer or any third party.</p>
+    <p>The app does not require an account, does not use network requests for its core
+      functionality, and contains no analytics, crash reporting, or advertising
+      frameworks.</p>
+
+    <h2>Data stored on your device</h2>
+    <p>Roundo stores the following data <strong>locally on your device only</strong>,
+      using Android’s standard Preferences DataStore. This data never leaves the device
+      and is removed when you uninstall the app:</p>
+    <ul>
+      <li>Your audio mute preference.</li>
+      <li>The last timer mode you used (so the home screen can highlight it).</li>
+      <li>Your last-used timer configuration per mode (rounds, durations, etc.) so the
+        setup screen can pre-fill it next time.</li>
+      <li>Saved timer presets you create.</li>
+      <li>Theme and language preferences.</li>
+    </ul>
+    <p>If you have Android Auto Backup enabled, this data may be included in your
+      device’s encrypted backup to your own Google account, governed by Google’s backup
+      terms. The developer has no access to those backups.</p>
+
+    <h2>Permissions</h2>
+    <p>Roundo requests only the minimum permissions needed for a workout timer to
+      function:</p>
+    <ul>
+      <li><strong>Foreground service</strong> — to keep your timer running accurately
+        while the screen is off or the app is in the background. No data is transmitted.</li>
+      <li><strong>Vibration</strong> — to deliver haptic feedback for phase transitions.</li>
+      <li><strong>Wake lock</strong> (implicit, via foreground service) — to prevent the
+        timer from being paused by the system mid-workout.</li>
+    </ul>
+    <p>The app does <strong>not</strong> request access to the network, location,
+      contacts, microphone, camera, files, or any other sensitive resource.</p>
+
+    <h2>External links</h2>
+    <p>Roundo’s settings screen contains a link to a donation page (Buy Me a Coffee /
+      Ko-fi). Tapping it opens your default browser. The linked services have their own
+      privacy policies, which the developer does not control. Donations are entirely
+      optional and unlock no app features.</p>
+
+    <h2>Children</h2>
+    <p>Roundo does not knowingly collect any data from anyone, including children.</p>
+
+    <h2>Changes to this policy</h2>
+    <p>If this policy is updated, the new version will be published at the same URL with
+      a new “Last updated” date.</p>
+
+    <h2>Contact</h2>
+    <p>For privacy-related questions: <a href="mailto:tomas@earthbanc.io">tomas@earthbanc.io</a></p>
+
+    <hr>
+    <footer>© 2026 Tomáš Hulek · Roundo — interval workout timer for Android &amp; Wear OS</footer>
+  </div>
+</body>
+</html>
