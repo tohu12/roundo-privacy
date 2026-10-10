@@ -61,15 +61,18 @@
       both the phone app and the watch app.</p>
 
     <div class="lead">
-      The short version: <strong>Roundo collects no data. None.</strong> It has no
-      internet permission and contains no analytics, crash reporting, telemetry, or
-      advertising SDKs.
+      The short version: <strong>Roundo collects no data. None.</strong> Its developer
+      never receives anything from the app. It has no internet permission and contains
+      no analytics, crash reporting, telemetry, or advertising SDKs.
     </div>
 
     <h2>Data we collect from you</h2>
-    <p><strong>None.</strong> Roundo does not include analytics SDKs, crash reporters,
-      telemetry, advertising IDs, or any other code that sends information about you,
-      your device, or your usage to Roundo’s developer or to any third party.</p>
+    <p><strong>None.</strong> Roundo’s developer never receives any data from the app.
+      Roundo does not include analytics SDKs, crash reporters, telemetry, advertising IDs,
+      or any code that sends information about you, your device, or your usage to the
+      developer or to any third party. The only data that ever leaves a device is the
+      optional phone ↔ watch sync described below, which goes end-to-end encrypted to
+      your own other device.</p>
 
     <h2>Data stored on your device</h2>
     <p>Roundo stores the following <strong>on your own device(s) only</strong>:</p>
@@ -91,10 +94,12 @@
     <p>If you use both the phone app and the Wear OS app on a paired phone and watch,
       Roundo uses the <strong>Wearable Data Layer</strong> of Google Play services to sync
       your presets from phone to watch and your finished-workout log from watch to phone.
-      Google Play services delivers this between your own paired devices — over Bluetooth
-      or Wi-Fi, or through Google’s servers when the devices aren’t directly connected,
-      under Google’s own privacy policy. Roundo’s developer never receives this data.
-      Heart-rate readings are never part of it.</p>
+      Google Play services delivers it between your own paired devices: directly over an
+      encrypted Bluetooth channel, or — when Bluetooth isn’t available — through a Google
+      server node, <strong>end-to-end encrypted</strong> so that neither Google nor
+      Roundo’s developer can read it. Only the same Roundo app, signed with the same key,
+      on your other device can access it. Roundo’s developer never receives this data, and
+      heart-rate readings are never part of it.</p>
     <p>After you complete a few workouts, Roundo may ask Google Play to show its standard
       in-app rating prompt (Google’s In-App Review API). Google decides whether the prompt
       appears, and any rating you leave goes to Google Play under Google’s own privacy
@@ -135,11 +140,14 @@
         nothing is sent off-device.</li>
     </ul>
     <p>Roundo does <strong>not</strong> request internet access, location, camera,
-      microphone, contacts, calendar, files, phone, or SMS. It has no network code, so
-      none of the data above can leave your own device(s) through Roundo.</p>
+      microphone, contacts, calendar, files, phone, or SMS. It has no network code of its
+      own; apart from the end-to-end encrypted phone ↔ watch sync above, none of the data
+      above leaves your device.</p>
 
     <h2>Data we share</h2>
-    <p>Nothing, with no one.</p>
+    <p>Nothing, with no one. The phone ↔ watch sync only moves your own data between your
+      own devices, end-to-end encrypted; it is not shared with Roundo’s developer or any
+      third party.</p>
 
     <h2>Children’s privacy</h2>
     <p>Roundo collects no data, so it does not knowingly or unknowingly collect data from
