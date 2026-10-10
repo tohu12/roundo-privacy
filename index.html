@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Privacy Policy — Roundo</title>
-  <meta name="description" content="Privacy policy for Roundo, a free interval workout timer for Android and Wear OS. No data collected, no tracking, no ads.">
+  <meta name="description" content="Privacy policy for Roundo, a free interval workout timer for Android phones and Wear OS watches. No data collected, no tracking, no ads.">
   <style>
     :root {
       --bg: #0B0D10; --bg2: #14171D; --card: #12151B;
@@ -32,6 +32,7 @@
     a { color: var(--lime); text-decoration: none; }
     a:hover { text-decoration: underline; }
     strong { color: var(--fg); }
+    code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 14px; color: var(--fg); }
     .lead {
       background: var(--card); border: 1px solid var(--line); border-radius: 16px;
       padding: 20px 22px; margin: 28px 0; font-size: 16px;
@@ -53,65 +54,107 @@
     </div>
 
     <h1>Privacy Policy</h1>
-    <div class="updated">Last updated: 6 May 2026</div>
+    <div class="updated">Last updated: 10 October 2026</div>
 
     <p>Roundo (“the app”) is a free, ad-free interval and CrossFit-style workout timer
-      for Android and Wear OS, published by Tomáš Hulek.</p>
+      for Android phones and Wear OS watches, published by Tomáš Hulek. This policy covers
+      both the phone app and the watch app.</p>
 
     <div class="lead">
-      This policy explains what data the app handles. The short version:
-      <strong>the app collects nothing, sends nothing, and contains no third-party
-      tracking, no analytics, and no advertising SDKs.</strong>
+      The short version: <strong>Roundo collects no data. None.</strong> It has no
+      internet permission and contains no analytics, crash reporting, telemetry, or
+      advertising SDKs.
     </div>
 
-    <h2>Data we collect</h2>
-    <p><strong>None.</strong> Roundo does not collect, transmit, or share any personal
-      or non-personal data with the developer or any third party.</p>
-    <p>The app does not require an account, does not use network requests for its core
-      functionality, and contains no analytics, crash reporting, or advertising
-      frameworks.</p>
+    <h2>Data we collect from you</h2>
+    <p><strong>None.</strong> Roundo does not include analytics SDKs, crash reporters,
+      telemetry, advertising IDs, or any other code that sends information about you,
+      your device, or your usage to Roundo’s developer or to any third party.</p>
 
     <h2>Data stored on your device</h2>
-    <p>Roundo stores the following data <strong>locally on your device only</strong>,
-      using Android’s standard Preferences DataStore. This data never leaves the device
-      and is removed when you uninstall the app:</p>
+    <p>Roundo stores the following <strong>on your own device(s) only</strong>:</p>
     <ul>
-      <li>Your audio mute preference.</li>
-      <li>The last timer mode you used (so the home screen can highlight it).</li>
-      <li>Your last-used timer configuration per mode (rounds, durations, etc.) so the
-        setup screen can pre-fill it next time.</li>
-      <li>Saved timer presets you create.</li>
-      <li>Theme and language preferences.</li>
+      <li>Your last-used timer mode and the per-mode setup values you last entered, so
+        you can pick up where you left off.</li>
+      <li>Your saved presets (named timer configurations you’ve bookmarked).</li>
+      <li>Your workout log — a history of finished workouts (mode, total time, per-round
+        breakdown, and any notes you typed). You can export it as a CSV via the system
+        share sheet.</li>
+      <li>Your audio mute toggle, language choice, heart-rate and Health Connect toggles,
+        and the AMRAP count-up display preference.</li>
+      <li>A count of completed workouts and the date Roundo last asked you to rate it,
+        used only to decide when to show Google Play’s rating prompt.</li>
     </ul>
-    <p>If you have Android Auto Backup enabled, this data may be included in your
-      device’s encrypted backup to your own Google account, governed by Google’s backup
-      terms. The developer has no access to those backups.</p>
+    <p>This data is held in Android’s Preferences DataStore in Roundo’s private
+      application directory. Uninstalling Roundo removes all of it. There is no account
+      system and Roundo runs no cloud service of its own.</p>
+    <p>If you use both the phone app and the Wear OS app on a paired phone and watch,
+      Roundo uses the <strong>Wearable Data Layer</strong> of Google Play services to sync
+      your presets from phone to watch and your finished-workout log from watch to phone.
+      Google Play services delivers this between your own paired devices — over Bluetooth
+      or Wi-Fi, or through Google’s servers when the devices aren’t directly connected,
+      under Google’s own privacy policy. Roundo’s developer never receives this data.
+      Heart-rate readings are never part of it.</p>
+    <p>After you complete a few workouts, Roundo may ask Google Play to show its standard
+      in-app rating prompt (Google’s In-App Review API). Google decides whether the prompt
+      appears, and any rating you leave goes to Google Play under Google’s own privacy
+      policy. Roundo never learns whether or how you rated it.</p>
+    <p>No backup includes this data unless your device’s general Android Auto Backup is
+      enabled (a system-wide setting Roundo does not control). On the phone, the workout
+      log is excluded from Auto Backup.</p>
 
-    <h2>Permissions</h2>
-    <p>Roundo requests only the minimum permissions needed for a workout timer to
-      function:</p>
+    <h2>Heart rate (Wear OS watch app)</h2>
+    <p>If you turn on heart rate in the watch app’s Settings and grant the permission,
+      Roundo reads your heart rate from the watch’s sensor (through Wear OS Health
+      Services) <strong>while a workout is on screen</strong> and shows it live on the
+      timer. Heart-rate readings are <strong>displayed only</strong>: Roundo never stores
+      them, never adds them to the workout log, never syncs them to the phone, and never
+      sends them anywhere. Roundo does not read heart rate in the background. Leave the
+      toggle off or decline the permission and the timer works fully without it.</p>
+
+    <h2>Permissions we request and why</h2>
     <ul>
-      <li><strong>Foreground service</strong> — to keep your timer running accurately
-        while the screen is off or the app is in the background. No data is transmitted.</li>
-      <li><strong>Vibration</strong> — to deliver haptic feedback for phase transitions.</li>
-      <li><strong>Wake lock</strong> (implicit, via foreground service) — to prevent the
-        timer from being paused by the system mid-workout.</li>
+      <li><strong>Foreground service</strong> (phone and watch) — keeps the workout timer
+        running while your screen is off. Used only while a workout is active.</li>
+      <li><strong>Notifications</strong> (phone and watch, Android 13+) — on the phone,
+        shows the running-timer notification with pause / resume on the lock screen; on
+        the watch, shows the running workout as a watch-face shortcut. Optional: if you
+        decline, the timer still runs correctly.</li>
+      <li><strong>Vibration</strong> (phone and watch) — haptic cues during a workout. No
+        data involved.</li>
+      <li><strong>Wake lock</strong> (watch) — keeps the watch awake enough to tick the
+        timer during a workout.</li>
+      <li><strong>Body sensors / Read heart rate</strong> (watch; <code>BODY_SENSORS</code>
+        on Android 15 and earlier, <code>health.READ_HEART_RATE</code> on Android 16 / Wear
+        OS 6 and later) — <em>optional, off until you enable heart rate in Settings</em>.
+        Used only as described under “Heart rate” above.</li>
+      <li><strong>Health Connect: write exercise</strong> (phone) — <em>optional, off until
+        you enable Health Connect export in Settings and grant the permission</em>. Roundo
+        writes each finished workout into <strong>your own</strong> Health Connect store on
+        your device. It only writes; it never reads anything back from Health Connect, and
+        nothing is sent off-device.</li>
     </ul>
-    <p>The app does <strong>not</strong> request access to the network, location,
-      contacts, microphone, camera, files, or any other sensitive resource.</p>
+    <p>Roundo does <strong>not</strong> request internet access, location, camera,
+      microphone, contacts, calendar, files, phone, or SMS. It has no network code, so
+      none of the data above can leave your own device(s) through Roundo.</p>
+
+    <h2>Data we share</h2>
+    <p>Nothing, with no one.</p>
+
+    <h2>Children’s privacy</h2>
+    <p>Roundo collects no data, so it does not knowingly or unknowingly collect data from
+      anyone, of any age.</p>
 
     <h2>External links</h2>
-    <p>Roundo’s settings screen contains a link to a donation page (Buy Me a Coffee /
-      Ko-fi). Tapping it opens your default browser. The linked services have their own
-      privacy policies, which the developer does not control. Donations are entirely
-      optional and unlock no app features.</p>
-
-    <h2>Children</h2>
-    <p>Roundo does not knowingly collect any data from anyone, including children.</p>
+    <p>Roundo’s Settings contain a “Support development” link that opens the Buy Me a
+      Coffee page in your default browser. Once you tap it you’ve left Roundo and Buy Me a
+      Coffee’s privacy policy applies. Tapping the link sends nothing about you to
+      Roundo’s developer. Donations are optional and unlock nothing.</p>
 
     <h2>Changes to this policy</h2>
-    <p>If this policy is updated, the new version will be published at the same URL with
-      a new “Last updated” date.</p>
+    <p>If Roundo’s data handling ever changes, this policy will be updated at the same URL
+      with a new “Last updated” date, and the change will be called out in the release
+      notes.</p>
 
     <h2>Contact</h2>
     <p>For privacy-related questions: <a href="mailto:tomas@earthbanc.io">tomas@earthbanc.io</a></p>
